@@ -14,6 +14,10 @@ class Student extends Model
         'lastName',
         'email',
         'age',
-        'address'
+        'address',
+        'city',
+        'country',
+        'post_code',
+        'info'
     ];
 }

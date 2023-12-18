@@ -36,5 +36,9 @@
                 </div>
             </main>
         </div>
+         <!-- footer -->
+         <footer>
+            <p class="text-center">&copy; {{now()->year}} Your Company. All rights reserved.</p>
+        </footer>
     </body>
 </html>

@@ -48,7 +48,12 @@ class StudentController extends Controller
             'firstName' => 'required|string|max:255',
             'lastName' => 'required|string|max:255',
             'email' => 'required|email',
-            'age' => 'required|numeric'
+            'age' => 'required|numeric',
+            'address' => 'required|string|max:255',
+            'city' => 'required|string|max:100',
+            'country' => 'required|string|max:100',
+            'post_code' => 'numeric',
+            'info' => 'string',
         ]);
         $student = Student::create($validatedData);
 
