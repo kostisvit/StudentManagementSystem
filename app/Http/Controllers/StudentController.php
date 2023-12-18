@@ -15,11 +15,17 @@ class StudentController extends Controller
      */
     public function index(): View
     {   
-        $students = Student::all();
+        $student = Student::all();
         
-        return view('student.index',['students' => $students]);
+        return view('student.index',['students' => $student]);
     }
 
+    public function showItemsCount()
+    {
+        $itemCount = Student::count(); // Counting rows using Eloquent
+
+        return view('student.index', ['students' => $itemCount]);
+    }
     /**
      * Show the form for creating a new resource.
      *
