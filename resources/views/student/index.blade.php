@@ -92,7 +92,7 @@
       <tbody>
           <tr class="bg-gray-50 text-center">
               <td class="p-2 border-r">
-                  
+
               </td>
               <td class="p-2 border-r">
                   <input type="text" class="border p-1">
@@ -118,8 +118,8 @@
             <td class="p-2">
                 <input type="text" class="border p-1">
             </td>
-              
-          </tr> 
+
+          </tr>
           @foreach($students as $student)
           <tr class="bg-gray-100 text-center border-b text-sm text-gray-600">
               <td class="p-2 border-r">
@@ -158,10 +158,9 @@
       </tbody>
   </table>
 </div>
-  
+
 </section>
 
 
 
 @endsection
-
