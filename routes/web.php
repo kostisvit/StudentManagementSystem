@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\CompanyController;
 use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\StudentController;
 
@@ -20,9 +21,11 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/',[CompanyController::class,'create'])->name('company.create');
 
 // Route::resource('student', StudentController::class)
 //     ->only(['index',])
